@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    generate-unique-name: false
+    username: admin
+    password: root
+
+  jpa:
+    properties:
+      javax:
+        persistence:
+          validation:
+            mode: none
+  main:
+    allow-circular-references: true
+
