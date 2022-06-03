@@ -1,0 +1,222 @@
+body {
+  padding-bottom: 100px;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  background: #eee;
+}
+
+.profileCard {
+  border: none;
+
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.profileCard:before {
+
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #f7aa6b7c;
+  transform: scaleY(1);
+  transition: all 0.5s;
+  transform-origin: bottom
+}
+
+.profileCard:after {
+
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #ff832d;
+  transform: scaleY(0);
+  transition: all 0.5s;
+  transform-origin: bottom
+}
+
+.profileCard:hover::after {
+  transform: scaleY(1);
+}
+
+
+.fonts {
+  font-size: 11px;
+}
+
+.social-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+}
+
+.social-list li {
+  padding: 7px;
+  color: #fca552;
+  font-size: 19px;
+}
+
+.buttons button:nth-child(2) {
+  border: 1px solid #fc5252 !important;
+  color: #fc5252;
+  height: 40px;
+}
+
+.buttons button:nth-child(2):hover {
+  border: 1px solid #fc5252 !important;
+  color: #fff;
+  height: 40px;
+  background-color: #fc5252;
+}
+
+.buttons button:nth-child(1) {
+  border: 1px solid #fca552 !important;
+  background-color: #fca552;
+  color: #fff;
+  height: 40px;
+}
+
+.deletebutton button:nth-child(1) {
+  border: 1px solid #fc5252 !important;
+  color: #fc5252;
+  height: 40px;
+}
+
+.deletebutton button:nth-child(1):hover {
+  border: 1px solid #fc5252 !important;
+  color: #fff;
+  height: 40px;
+  background-color: #fc5252;
+}
+
+
+footer.nb-footer {
+  background: #ffdfb96c;
+  border-top: 4px solid #fca552;
+}
+
+footer.nb-footer .about {
+  margin: 0 auto;
+  margin-top: 0px;
+  max-width: 1170px;
+  text-align: center;
+}
+
+footer.nb-footer .about p {
+  font-size: 13px;
+  color: #999;
+  margin-top: 0px;
+}
+
+footer.nb-footer .about .social-media {
+  margin-top: 0px;
+}
+
+footer.nb-footer .about .social-media ul li a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  font-size: 15px;
+  color: #fca552;
+}
+
+footer.nb-footer .about .social-media ul li a:hover {
+  background: #fca552;
+  color: #fff;
+  border-color: #fca552;
+}
+
+footer.nb-footer .footer-info-single {
+  margin-top: 0px;
+}
+
+footer.nb-footer .footer-info-single .title {
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-left: 4px solid #fca552;
+  padding-left: 5px;
+}
+
+footer.nb-footer .footer-info-single ul li a {
+  display: block;
+  color: #aaa;
+  padding: 2px 0;
+}
+
+footer.nb-footer .footer-info-single ul li a:hover {
+  color: #fca552;
+}
+
+footer.nb-footer .footer-info-single p {
+  font-size: 13px;
+  line-height: 20px;
+  color: #aaa;
+}
+
+footer.nb-footer .copyright {
+  margin-top: 0px;
+  background: #f9bc74;
+  padding: 0px 0;
+  color: rgb(255, 255, 255);
+}
+
+footer.nb-footer .copyright p {
+  margin: 0;
+  padding: 0;
+}
+
+.box-header {
+  background: #dedede;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 50px 0px;
+}
+
+.box-header .fa {
+  color: #FFF;
+}
+
+.box-header-instagram {
+  background: linear-gradient(45deg, #fca552, #fc4e4e);
+}
+
+.box-bottom {
+  background: #FFF;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px 0px;
+}
+
+.box-text {
+  padding: 5px 0px;
+}
+
+.instagram-title {
+  background: linear-gradient(45deg, #fca552, #ff6666);
+  font-size: 40px;
+  font-weight: 600;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
