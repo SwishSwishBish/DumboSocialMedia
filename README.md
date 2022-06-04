@@ -1,7 +1,7 @@
 # <p align=center>Dumbo Social Media</p>
 <p align="center"><img 
     style="width: 70%;"
-    src="https://i.ibb.co/bzJzNw3/dumboss.png" 
+    src="images\dumboss.png" 
     alt="Our logo">
 </img></p>
 <p align="center">
@@ -133,10 +133,10 @@ Dumbo is a full-stack social media application in MVC architecture prepared usin
 
 ## Demo
 
-<p align="center"><img width=700 src="https://i.im.ge/2022/06/04/rRtPMJ.gif" alt="demo"/></p>
-<p align="center"><img width=700 src="https://i.im.ge/2022/06/04/rRtxPF.gif" alt="demo"/></p>
-<p align="center"><img width=700 src="https://i.im.ge/2022/06/04/rRtyxS.gif" alt="demo"/></p>
-<p align="center"><img width=700 src="https://i.im.ge/2022/06/04/rRtEd6.gif" alt="demo"/></p>
+<p align="center"><img width=700 src="images\demo1.gif" alt="demo"/></p>
+<p align="center"><img width=700 src="images\demo2.gif" alt="demo"/></p>
+<p align="center"><img width=700 src="images\demo3.gif" alt="demo"/></p>
+<p align="center"><img width=700 src="images\demo4.gif" alt="demo"/></p>
 <p align="center"><img width=50 src="images\dumbo.ico" alt="demo"/></p>
 
 ## Connect with me:
