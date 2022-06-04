@@ -1,7 +1,7 @@
 # <p align=center>Dumbo Social Media</p>
 <p align="center"><img 
     style="width: 70%;"
-    src="images\dumboss.png" 
+    src="https://i.ibb.co/bzJzNw3/dumboss.png" 
     alt="Our logo">
 </img></p>
 <p align="center">
@@ -14,7 +14,7 @@
 
 
 <p align=center>
-Dumbo is a full-stack social media application in MVC architecture prepared using Spring boot and React. It was developed to learn, so it is not equipped to meet real-world expectations. It performs the basic functions that can be expected from the social media platform properly.</p> 
+Dumbo is a full-stack social media application in MVC architecture prepared using Spring boot and React. It is developed to learn, so it is not equipped to meet real-world expectations. It performs the basic functions that can be expected from the social media platform properly.</p> 
 <p align=center>You are free to develop and use it.</p>
 
 ## Techs
@@ -133,10 +133,10 @@ Dumbo is a full-stack social media application in MVC architecture prepared usin
 
 ## Demo
 
-<p align="center"><img width=700 src="images\demo1.gif" alt="demo"/></p>
-<p align="center"><img width=700 src="images\demo2.gif" alt="demo"/></p>
-<p align="center"><img width=700 src="images\demo3.gif" alt="demo"/></p>
-<p align="center"><img width=700 src="images\demo4.gif" alt="demo"/></p>
+<p align="center"><img width=700 src="https://i.im.ge/2022/06/04/rRtPMJ.gif" alt="demo"/></p>
+<p align="center"><img width=700 src="https://i.im.ge/2022/06/04/rRtxPF.gif" alt="demo"/></p>
+<p align="center"><img width=700 src="https://i.im.ge/2022/06/04/rRtyxS.gif" alt="demo"/></p>
+<p align="center"><img width=700 src="https://i.im.ge/2022/06/04/rRtEd6.gif" alt="demo"/></p>
 <p align="center"><img width=50 src="images\dumbo.ico" alt="demo"/></p>
 
 ## Connect with me:
