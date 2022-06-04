@@ -1,7 +1,7 @@
 # <p align=center>Dumbo Social Media</p>
 <p align="center"><img 
     style="width: 70%;"
-    src="images\dumboss.png" 
+    src="https://github.com/SwishSwishBish/DumboSocialMedia/blob/master/images/dumboss.png?raw=true" 
     alt="Our logo">
 </img></p>
 <p align="center">
@@ -133,10 +133,10 @@ Dumbo is a full-stack social media application in MVC architecture prepared usin
 
 ## Demo
 
-<p align="center"><img width=700 src="images\demo1.gif" alt="demo"/></p>
-<p align="center"><img width=700 src="images\demo2.gif" alt="demo"/></p>
-<p align="center"><img width=700 src="images\demo3.gif" alt="demo"/></p>
-<p align="center"><img width=700 src="images\demo4.gif" alt="demo"/></p>
+<p align="center"><img width=700 src="https://github.com/SwishSwishBish/DumboSocialMedia/blob/master/images/demo1.gif?raw=true" alt="demo"/></p>
+<p align="center"><img width=700 src="https://github.com/SwishSwishBish/DumboSocialMedia/blob/master/images/demo2.gif?raw=true" alt="demo"/></p>
+<p align="center"><img width=700 src="https://github.com/SwishSwishBish/DumboSocialMedia/blob/master/images/demo3.gif?raw=true" alt="demo"/></p>
+<p align="center"><img width=700 src="https://github.com/SwishSwishBish/DumboSocialMedia/blob/master/images/demo4.gif?raw=true" alt="demo"/></p>
 <p align="center"><img width=50 src="images\dumbo.ico" alt="demo"/></p>
 
 ## Connect with me:
