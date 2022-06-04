@@ -14,8 +14,6 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 public @interface UniqueUsername {
 
     String message() default "{dumbo.constraint.username.UniqueUsername.message}";
-
     Class<?>[] groups() default { };
-
     Class<? extends Payload>[] payload() default { };
 }

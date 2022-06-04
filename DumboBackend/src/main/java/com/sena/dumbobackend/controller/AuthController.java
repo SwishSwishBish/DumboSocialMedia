@@ -1,26 +1,30 @@
 package com.sena.dumbobackend.controller;
 
-import com.fasterxml.jackson.annotation.JsonView;
-import com.sena.dumbobackend.repository.IUserRepository;
-import com.sena.dumbobackend.repository.entity.User;
-import com.sena.dumbobackend.shared.CurrentUser;
-import com.sena.dumbobackend.shared.Views;
+import com.sena.dumbobackend.security.AuthResponse;
+import com.sena.dumbobackend.security.Credentials;
+import com.sena.dumbobackend.service.AuthService;
+import com.sena.dumbobackend.shared.GenericResponse;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
 public class AuthController {
 
-    final IUserRepository userRepository;
+    final AuthService authService;;
 
     @PostMapping("/api/1.0/auth")
-    @JsonView(Views.Base.class)
-    ResponseEntity<?> handleAuthentication(@CurrentUser User user) {
-        return ResponseEntity.ok(user);
+    AuthResponse handleAuthentication(@RequestBody Credentials credentials) {
+        return authService.authenticate(credentials);
+    }
+
+    @PostMapping("/api/1.0/logout")
+    GenericResponse handleLogout(@RequestHeader(name = "Authorization") String authorization) {
+        String token = authorization.substring(7);
+        authService.clearToken(token);
+        return new GenericResponse("Logout success.");
     }
 }

@@ -1,9 +1,8 @@
 package com.sena.dumbobackend.repository.entity;
 
-import com.fasterxml.jackson.annotation.JsonView;
-import com.sena.dumbobackend.shared.Views;
 import com.sena.dumbobackend.validator.UniqueUsername;
-import lombok.Data;
+import lombok.*;
+import org.hibernate.Hibernate;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -13,8 +12,13 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.util.Collection;
+import java.util.List;
+import java.util.Objects;
 
-@Data
+@Getter
+@Setter
+@ToString
+@RequiredArgsConstructor
 @Entity
 @Table(name = "users")
 public class User implements UserDetails {
@@ -25,13 +29,11 @@ public class User implements UserDetails {
     @NotNull(message = "{dumbo.constraint.username.NotNull.message}")
     @Size(min = 4, max = 100)
     @UniqueUsername
-    @JsonView(Views.Base.class)
     private String username;
 
     @NotNull
     @Size(min = 4, max = 50)
     @Column(name = "display_name", unique = true)
-    @JsonView(Views.Base.class)
     private String displayName;
 
     @NotNull
@@ -40,8 +42,13 @@ public class User implements UserDetails {
     @Column(name = "password")
     private String password;
 
-    @JsonView(Views.Base.class)
     private String profileImage;
+
+    @OneToMany(mappedBy="user", cascade=CascadeType.REMOVE)
+    private List<Post> posts;
+
+    @OneToMany(mappedBy="user", cascade=CascadeType.REMOVE)
+    private List<Token> tokens;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -66,5 +73,18 @@ public class User implements UserDetails {
     @Override
     public boolean isEnabled() {
         return true;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) return false;
+        User user = (User) o;
+        return id != null && Objects.equals(id, user.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return getClass().hashCode();
     }
 }

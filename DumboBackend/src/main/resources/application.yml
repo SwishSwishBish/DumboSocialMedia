@@ -3,13 +3,43 @@ spring:
     generate-unique-name: false
     username: admin
     password: root
-
   jpa:
     properties:
       javax:
         persistence:
           validation:
             mode: none
-  main:
-    allow-circular-references: true
+  data:
+    web:
+      pageable:
+        default-page-size: 10
+        max-page-size:   50
+
+  profiles:
+    active:
+      - production
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+
+dumbo:
+  upload-path: image-storage
+
+---
+spring:
+  profiles: production
+
+  datasource:
+    url: jdbc:h2:./DumboSocialMedia
+    username: admin
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+---
+spring:
+  profiles: development
 
